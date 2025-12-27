@@ -1,6 +1,7 @@
 name: First Workflow
 on:
   workflow_dispatch:
+
 jobs:
   first-job:
     runs-on: ubuntu-latest
@@ -9,3 +10,8 @@ jobs:
         run: echo "Hello World!"
       - name: Print goodbye
         run: echo "Done - Bye"
+      - name: Show current date
+        run: date
+
+
+        
